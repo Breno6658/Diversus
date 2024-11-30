@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <title>Cancelar Newsletter</title>
+</head>
+
+<body>
+    <div id="modal">
+        <form autocomplete="off" action="/processarDados" method="post">
+            <div class="modal-header">
+                <h4 class="confirmacao">Confirmar que quer cancelar a inscrição</h4>
+                <p class="msg">Cancelando a inscrição em Newsletter para assinantes, você pode deixar de receber as últimas
+                    atualizações!</p>
+            </div>
+            <div class="modal-body">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="example@diversus.com" required>
+                </div>
+                <div class="modal-send">
+                <input class="confirmar" type="submit" value="Enviar">
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</body>
+
+</html>
